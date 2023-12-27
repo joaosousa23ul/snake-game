@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fooled Page</title>
+    <style>
+        body {
+            background-color: #ffcccc;
+            background-image: url('img/glitch-art-minimalism-dark-game-over-wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #3e0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: #3e0f0f;
+        }
+
+        main {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .error-message {
+            font-size: 2em;
+            color: #ff6666;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #ff6666;
+            border-color: #ff6666;
+        }
+
+        .btn-move {
+            animation: moveButton 1s infinite; /* Ajuste a duração e outros parâmetros conforme necessário */
+        }
+
+        @keyframes moveButton {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-100px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Something went wrong...</h1>
+    </header>
+    <main>
+        <p class="error-message">Oops! It seems like there's been a mistake. Click the button to redirect to the Snake Game.</p>
+        <a href="game-index.html" class="btn btn-dark btn-move" style="background-color:black;">Catch me and play</a>
+    </main>
+    <footer>
+        <p>Author: João Sousa™️</p>
+    </footer>
+</body>
+</html>

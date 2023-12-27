@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Snake Game</title>
+    <style>
+        body {
+            background-color: #561313; /* Cor de fundo do primeiro conjunto de estilos */
+            background-size: cover; /* Faz com que a imagem cubra toda a página */
+            background-position: center;
+            background-attachment: fixed; /* Mantém a imagem fixa enquanto você rola */
+            font-family: 'Open Sans', sans-serif; /* Fonte do primeiro conjunto de estilos */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;  
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 65vmin;
+            height: 70vmin;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 5px;
+            background: #2c5499;
+            box-shadow: 0 20px 40px #3457dc33;
+        }
+
+        .game-details {
+            color: #B8C6DC;
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding: 20px 27px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .play-board {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            background-color: black;
+            grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+        }
+
+        /* Restante do CSS do primeiro conjunto de estilos */
+
+        /* CSS do segundo conjunto de estilos */
+        #game-board {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border: 2px solid #333;
+            background-color: black;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer{
+            background-color: 333;
+        }
+
+        #button-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .btn {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0</span>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+    </div>
+    <div id="button-container">
+        <a href="index.html" class="btn btn-dark" style="background-color: black;">Home Snake</a>
+    </div>
+    <footer style="background-color: #3e0f0f;">
+        <p>Author: João Sousa™️</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

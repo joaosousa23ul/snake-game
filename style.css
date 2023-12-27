@@ -1,0 +1,124 @@
+/* css */
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+  header {
+    background-color: #561313;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 90vmin;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 20px #0000001a;
+}
+
+
+.game-info {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px;
+    background: #ecf0f1;
+    border-bottom: 1px solid #bdc3c7;
+}
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso é necessário para centralizar verticalmente */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicione o estilo do jogo abaixo se não estiver em um arquivo separado */
+
+.play-board {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    gap: 2px;
+    background-color: #ecf0f1;
+    border-top: 1px solid #c7c4bd;
+}
+
+.play-board div {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para o corpo da cobra */
+/* Estilo para o corpo da cobra com imagem */
+.snake-body {
+    background: #096d33;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0000004d;
+}
+
+/* Estilo para a comida com imagem */
+.food {
+    width: 40px;
+    height: 40px;
+    background: url('img/applegg-removebg-preview.png'); /* Substitua 'food_image.png' pelo caminho real da imagem da comida */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.head {
+    width: 200px;
+    height: 200px;
+    background: url('img/cobracega-removebg-preview.png ');
+    background-size: cover;
+    border-radius: 0; /* Removi o border-radius para evitar distorções visuais */
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    background: #ecf0f1;
+    border-top: 1px solid #bdc3c7;
+    padding: 10px 0;
+}
+
+.controls i {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #34495e;
+    cursor: pointer;
+}
+
